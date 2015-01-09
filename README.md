@@ -14,7 +14,7 @@ It's an update of [Chris Essig](https://twitter.com/CourierEssig) and [Chris Kel
 
 ![](screenshots/share.png)
 
-- Then grab the "key" from the URL. That's the long string of numbers in the middle of URL. In one of my sheets I'm editing right now, the URL is:
+- Then grab the "key" from the URL. That's the long string of numbers in the middle of URL. In a sheet I'm editing right now, the URL is:
 https://docs.google.com/spreadsheets/d/1jqcH2h3ka0Mzrcp75xHvlt4d2onds0GMqJzsRvgwcyI/edit#gid=0
 
 	The key is between "...d/" and "/edit..":
@@ -34,7 +34,7 @@ var columns = [
 ```
 Add or delete lines to match the number of columns in your google sheet.  The `"data"` value is the name of your column in your google sheet. Tabletop will strip out spaces and uppercase letters, so if your sheets column is "State Governors" you would write "stategovernors" in for `"data"`. If your google sheet has column names that begin with numbers or contain punctuation, datatables will throw an error.
 
-	`"title"` should be how you want the column to look in the published datatable. If you had to remove important punctuation in the google sheet you can put it back here.
+	The `"title"` value should be a string formatted how you'd like it to appear in the published datatable. If you had to remove important punctuation in the google sheet you can put it back here.
 	
 - And that's enough to publish a datatable! I've wrapped the DataTable in some HTML with sensible CSS, so you'll want to edit `index.html` to add a title, intro graf, source and credit.
 
