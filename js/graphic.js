@@ -4,8 +4,8 @@
 var key = "1kRslA25rr0cQohAoyHcsm1-R9380nV-73cHJuxqNMk0";
 
 //"data" refers to the column name with no spaces and no capitals
-//"title" is the column name as it appears in the published piece
-//
+	//punctuation or numbers in your column name
+//"title" is the column name you want to appear in the published table
 var columns = [ 
     { "data": "manufacturer", "title": "Company" },
     { "data": "incentivesreceived", "title": "Incentives Received" },
@@ -28,15 +28,19 @@ $(document).ready(function() {
 
     function writeTable(data){
         //select main div and put a table there
-        $('#graphic').html('<table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered table-striped" id="mySelection"></table>');
+		//use bootstrap css to customize table style: http://getbootstrap.com/css/#tables 
+        $('#graphic').html('<table cellpadding="0" cellspacing="0" border="0" class="table table-condensed table-bordered table-striped table-hover" id="mySelection"></table>');
 
         //initilize the DataTable object and put settings in
-        //
         $("#mySelection").DataTable({
             "data": data, //var where data is
             "columns": columns, //call up column object
-            "order":[[0, "asc"]], //order on 3rd column
+            "order":[[0, "asc"]], //order on 1st column
             "pagingType": "simple" //no page numbers
+			//uncomment these options to simplify your table
+			//"paging": false,
+			//"searching": false,
+			//"info": false
             });
         }
 });
