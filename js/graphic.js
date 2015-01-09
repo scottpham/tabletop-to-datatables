@@ -1,4 +1,4 @@
-//Change only the below two variables. Add dataTable options to the DataTable call 
+//Edit 'key' and 'columns' to connect your spreadsheet
 
 //enter google sheets key here
 var key = "1kRslA25rr0cQohAoyHcsm1-R9380nV-73cHJuxqNMk0";
@@ -33,8 +33,8 @@ $(document).ready(function() {
 
         //initilize the DataTable object and put settings in
         $("#mySelection").DataTable({
-            "data": data, //var where data is
-            "columns": columns, //call up column object
+            "data": data,
+            "columns": columns, 
             "order":[[0, "asc"]], //order on 1st column
             "pagingType": "simple" //no page numbers
 			//uncomment these options to simplify your table
