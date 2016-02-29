@@ -2,102 +2,125 @@
 <html lang="en">
 
 <head>
-    <title>Table</title>
+	<title>Table</title>
 
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    <!--JS LIBRARIES-->
-    <!--JQUERY-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!--BOOTSTRAP JS-->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
- 
-    <!--BOOTSTRAP CSS-->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<!--JS LIBRARIES-->
+	<!--JQUERY-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<!--BOOTSTRAP JS-->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-  
-    <!-- DataTables -->
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.3/js/jquery.dataTables.js"></script>
+	<!--BOOTSTRAP CSS-->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!--bootstrap integration css -->
-    <link rel="stylesheet" href="//cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.css">
 
-    <!--bootstrap integration js -->
-    <script src="//cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+	<!-- DataTables -->
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min.js"></script>
 
-    <!-- TableTop raw git -->
-    <script src="js/tabletop.js"></script>
+	<!--bootstrap integration css -->
+	<link rel="stylesheet" href="//cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.css">
 
-    <style type="text/css">
-        html { -webkit-text-size-adjust: none; }
-        body {
-            margin: 0;
-            padding: 0;
-            font: 14px/1.4 Arial, Helvetica, sans-serif;
-            color: black;
-        }
-        h1 {
-            margin: 0 0 6px 0;
-            font-size: 20px;
-            color: black;
-        }
-        h2 {
-            font-weight: normal;
-            color: #666;
-            font-size: 14px;
-            margin: 0 0 22px 0;
-        }
-        .footnotes { margin-bottom: 20px; }
-        .footnotes h4 {
-            margin: 2px 0 7px 0;
-            color: #666;
-            font-size: 11px;
-        }
-        .footnotes p,
-        .footer p {
-            margin: 2px 0 0 0;
-            font-size: 11px;
-            line-height: 1.3;
-            color: #808080;
-        }
-        a, a:link, a:visited {
-            color: #4774CC;
-            text-decoration: none;
-        }
-        a:hover, a:active { opacity: 0.7; }
-        
-        /*custom styles*/
-        table, th {
-            text-align: center;
-        }
-        /*make odd rows lightblue*/
-        .table-striped > tbody > tr:nth-child(odd) > td {
-            background-color: #f4f7ff;
-        }
+	<!--bootstrap integration js -->
+	<script src="//cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 
-    </style>
+	<!-- TableTop raw git -->
+	<script src="js/tabletop.js"></script>
+
+	<style type="text/css">
+		html {
+			-webkit-text-size-adjust: none;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font: 14px/1.4 Arial, Helvetica, sans-serif;
+			color: black;
+		}
+
+		h1 {
+			margin: 0 0 6px 0;
+			font-size: 20px;
+			color: black;
+		}
+
+		h2 {
+			font-weight: normal;
+			color: #666;
+			font-size: 14px;
+			margin: 0 0 22px 0;
+		}
+
+		.footnotes {
+			margin-bottom: 20px;
+		}
+
+		.footnotes h4 {
+			margin: 2px 0 7px 0;
+			color: #666;
+			font-size: 11px;
+		}
+
+		.footnotes p,
+		.footer p {
+			margin: 2px 0 0 0;
+			font-size: 11px;
+			line-height: 1.3;
+			color: #808080;
+		}
+
+		a,
+		a:link,
+		a:visited {
+			color: #4774CC;
+			text-decoration: none;
+		}
+
+		a:hover,
+		a:active {
+			opacity: 0.7;
+		}
+		/*custom styles*/
+
+		table,
+		th {
+			text-align: center;
+		}
+		/*make odd rows lightblue*/
+
+		.table-striped > tbody > tr:nth-child(odd) > td {
+			background-color: #f4f7ff;
+		}
+	</style>
 </head>
+
 <body>
-    <h1>Top 100 California Companies by Wage Claims</h1>
-    <p>Workers that believe they were unpaid for hours worked can make a claim with the California Department of Labor. This list is the top 100 California companies ranked by total amount awarded by the state. Only claims that resulted in an award are listed here.</p>
+	<h1>Top 100 California Companies by Wage Claims</h1>
+	<p>Workers that believe they were unpaid for hours worked can make a claim with the California Department of Labor. This list is the top 100 California companies ranked by total amount awarded by the state. Only claims that resulted in an award are listed
+		here.
+	</p>
 
-    <div id="graphic"></div>
+	<div id="graphic"></div>
 
 
-   <div class="footnotes">
-        <h4>Notes</h4>
-        <p>The list total award amount does not necessarily mean that amount was paid out to the worker. A lack of enforcement in the wage dispute system means many workers never see any of their award.</p>
-    </div>
+	<div class="footnotes">
+		<h4>Notes</h4>
+		<p>The list total award amount does not necessarily mean that amount was paid out to the worker. A lack of enforcement in the wage dispute system means many workers never see any of their award.</p>
+	</div>
 
-    <div class="footer">
-        <p>Source: California Department of Labor</a></p>
-        <p>Credit: <a href="http://www.twitter.com/scottpham">Scott Pham</a>/NBC Bay Area</p>
-    </div>
+	<div class="footer">
+		<p>Source: California Department of Labor</a>
+		</p>
+		<p>Credit: <a href="http://www.twitter.com/scottpham">Scott Pham</a>/NBC Bay Area</p>
+	</div>
 
-    <script src="js/graphic.js" type="text/javascript"></script>
+	<script src="js/graphic.js" type="text/javascript"></script>
 
 </body>
+
 </html>
