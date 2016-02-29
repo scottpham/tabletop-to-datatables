@@ -40,14 +40,14 @@ $(document).ready(function() {
       '<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-condensed table-responsive" id="mySelection"></table>'
     );
 
-    //initilize the DataTable object and put settings in
+    //initialize the DataTable object and put settings in
     $("#mySelection").DataTable({
       "autoWidth": false,
       "data": data,
       "columns": columns,
       "order": [
         [2, "desc"]
-      ], //order on 1st column
+      ], //order on second column
       "pagingType": "simple" //no page numbers
         //uncomment these options to simplify your table
         //"paging": false,
