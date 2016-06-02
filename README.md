@@ -57,16 +57,16 @@ $('#graphic').html('<table cellpadding="0" cellspacing="0" border="0" class="tab
 ```
 
 ## Serve it up!
-If you've previously viewed web projects by double-clicking on an `index.html` file and opening that in a browser, that won't work here. To view the project, we'll have to start a development server. But don't worry, once you upload the project to the web somewhere, you won't have to start a server or anything. You'll just go to the website and it will just work.
+If you've previously viewed web projects by double-clicking on an `index.html` file and opening that in a browser, that won't work here. To view the project, we'll have to start a development server. But don't worry, once you upload the project to the web somewhere, you won't have to start a server or anything. You'll go to the website and it will just work.
 
 To start a dev server, first navigate to your project folder with the terminal (these instructions for Linux/OS X):
 
 `cd /path/to/project`
 
-Make sure you this is the folder which contains `index.html`. Then run:
+Make sure this is the folder which contains `index.html`. Then run:
 
 `python -m SimpleHTTPServer`
 
-The terminal will read: `Serving HTTP on 0.0.0.0 port 8000 ...`. That means you can type in `0.0.0.0:8000` in your browser. You should see your project.
+The terminal will return: `Serving HTTP on 0.0.0.0 port 8000 ...`. That means you can type in `0.0.0.0:8000` in your browser. You should see your project.
 
 	
