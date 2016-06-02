@@ -48,9 +48,12 @@ The `"title"` value should be a string formatted how you'd like it to appear in 
 			}
 		});
 
-The defaults are pretty fully featured, so you're more likely to want to remove options. `"paging": false` removes the paging buttons. `"searching": false` removes the search box and `"info": false` removes the "Showing X of Y Entries" text at the bottom of the table.
-More options are available from the [DataTables API](http://datatables.net/reference/option/).
+The defaults are pretty fully featured, so you're more likely to want to remove options. `"paging": false` removes the paging buttons. `"searching": false` removes the search box and `"info": false` removes the "Showing X of Y Entries" text at the bottom of the table. More options are available from the [DataTables API](http://datatables.net/reference/option/).
 
 - For general styling, use [Bootstrap CSS table classes](http://getbootstrap.com/css/#tables) and add or remove them here:
 
-       $('#graphic').html('<table cellpadding="0" cellspacing="0" border="0" class="table table-condensed table-bordered table-striped table-hover" id="mySelection"></table>');
+```
+$('#graphic').html('<table cellpadding="0" cellspacing="0" border="0" class="table table-condensed table-bordered	table-striped table-hover" id="mySelection"></table>');  
+```
+
+	
