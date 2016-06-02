@@ -26,7 +26,7 @@ var key = "1jqcH2h3ka0Mzrcp75xHvlt4d2onds0GMqJzsRvgwcyI";
 	    { "data": "manufacturer", "title": "Company" },
 	    { "data": "incentivesreceived", "title": "Incentives Received" },
 	    { "data": "total", "title": "Share of Total" }
-	  ];
+	    ];
 
 Add or delete lines to match the number of columns in your google sheet.  The `"data"` value is the name of your column in your google sheet. Tabletop will strip out spaces and uppercase letters, so if your sheets column is "State Governors" you would write "stategovernors" in for `"data"`. If your google sheet has column names that begin with numbers or contain punctuation, datatables will throw an error.
 
@@ -55,5 +55,18 @@ The defaults are pretty fully featured, so you're more likely to want to remove 
 ```
 $('#graphic').html('<table cellpadding="0" cellspacing="0" border="0" class="table table-condensed table-bordered	table-striped table-hover" id="mySelection"></table>');  
 ```
+
+## Serve it up!
+If you've previously viewed web projects by double-clicking on an `index.html` file and opening that in a browser, that won't work here. To view the project, we'll have to start a development server. But don't worry, once you upload the project to the web somewhere, you won't have to start a server or anything. You'll just go to the website and it will just work.
+
+To start a dev server, first navigate to your project folder with the terminal (these instructions for Linux/OS X):
+
+`cd /path/to/project`
+
+Make sure you this is the folder which contains `index.html`. Then run:
+
+`python -m SimpleHTTPServer`
+
+The terminal will read: `Serving HTTP on 0.0.0.0 port 8000 ...`. That means you can type in `0.0.0.0:8000` in your browser. You should see your project.
 
 	
